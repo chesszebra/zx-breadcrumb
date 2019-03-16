@@ -1,0 +1,28 @@
+.zx-breadcrumb {
+  @include zx-display-flex;
+  @include zx-flex-wrap(wrap);
+
+  margin-left: 0;
+  margin-bottom: 1rem;
+
+  a {
+    color: #8b95a5;
+  }
+
+  svg {
+    margin-right: 2px;
+    opacity: .9;
+  }
+}
+
+.zx-breadcrumb-item.zx-active {
+  color: #868e96;
+}
+
+.zx-breadcrumb-item + .zx-breadcrumb-item::before {
+  color: #8b95a5;
+  content: "/";
+  display: inline-block;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
